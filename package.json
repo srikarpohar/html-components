@@ -1,0 +1,26 @@
+{
+  "name": "generic-components",
+  "version": "1.0.0",
+  "description": "Generic components like app-drawer etc.",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "npm run build && node lib/index.js"
+  },
+  "keywords": [
+    "components",
+    "templates"
+  ],
+  "author": "Pohar Srikar",
+  "files": [
+    "lib/**/*",
+    "src/**/*.html"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.33",
+    "typescript": "^4.6.4"
+  }
+}
