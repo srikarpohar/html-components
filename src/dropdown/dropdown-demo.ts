@@ -1,3 +1,5 @@
+import { IOption } from "../../types/dropdown.js";
+
 const elements = ['Virat Kohli', 'MSD', 'Rohit Sharma', 'Rishabh Pant', 'Shreyas Iyer', 'Ravi Ashwin'],
     options: IOption[] = [];
 

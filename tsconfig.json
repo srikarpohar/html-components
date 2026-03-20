@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "module": "es6",
+        "module": "nodenext",
         "declaration": true,
+        "moduleResolution": "nodenext",
         "outDir": "./lib",
         "strict": true,
         "lib": [

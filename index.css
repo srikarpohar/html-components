@@ -1,0 +1,47 @@
+body {
+    /* This ensures that padding and border are included in the element's total width and height, 
+    which can help prevent layout issues and make it easier to manage spacing in your design. */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 0.7rem;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+main > .file {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 120ch;
+}
+
+main > #file-content {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 1vh;
+    max-height: 60vh;
+    width: 120ch;
+    overflow: auto;
+}
+
+main > .file #loader {
+    &::before {
+        content: "Loading...";
+    }
+}
+
+.hide-loader {
+    display: none;
+}

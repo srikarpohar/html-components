@@ -3,22 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive design meta tag -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="./lib/index.js"></script>
+
+    <link rel="stylesheet" href="./index.css">
+    <!-- <script defer src="./index.js"></script> -->
+    <script defer type="module" src="./lib/file-stream-read.js"></script>
     <script type="text/javascript" src="./lib/src/tutorial/tutorial.js" defer></script>
-    <script type="text/javascript" src="./lib/src/dropdown/dropdown.js"></script>
+    <script type="text/javascript" src="./lib/src/dropdown/dropdown.js" defer></script>
 </head>
 <body>
-    <dropdown id="simple-dropdown">
+
+    <header>
+        <h2>Test Application</h2>
+    </header>
+    <!-- <dropdown id="simple-dropdown">
         <span slot="heading">Heading from custom component</span>
     </dropdown>
 
     <sample-element id="sample-element" name="Srikar">
         <h4 slot="heading">Heading 4 slot</h4>
         <p>Hello</p>
-    </sample-element>
+    </sample-element> -->
+
+    <main>
+        <section class="file">
+            <div class="controls">
+                <!-- <input type="file" id="file-input" /> -->
+                <h3>Stream reading a file</h3>
+                <a role="button" href="#" id="read-file">Read file</a>
+                <a role="button" href="#" id="stop-file-read">Stop Read file</a>
+            </div>
+
+
+            <div id="loader" class="hide-loader"></div>
+        </section>
+        
+        <pre id="file-content">
+            <h3>Content</h3>
+        </pre>
+    </main>
+
 
     
 </body>
+
 </html>
